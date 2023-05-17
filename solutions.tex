@@ -25,6 +25,7 @@
 \newcommand{\Z}{\mathbb{Z}}
 \newcommand{\C}{\mathbb{C}}
 \newcommand{\F}{\mathbb{F}}
+\newcommand{\Q}{\mathbb{Q}}
 \newcommand{\Tor}{\ \text{or}\ }
 \newcommand{\Tand}{\ \text{and}\ }
 \newcommand{\Mod}[1]{\ {\mathrm{mod}\ #1}}
@@ -64,5 +65,35 @@
   \[{\left(\frac{p}{q}\right)}^2 = 3.\]
   Rewriting the above equality yields
   \[p^2 = 3q^2.\]
+  Then $3 | p^2$, and since $3$ is prime, we also have $3 | p$. By the
+  definition of divisibility there exists $k \in \Z$ such that
+  $p = 3k$. Substituting into the above equation yields
+  \[(3k)^2 = 9k^2 = 3q^2 \implies 3k^2 = q^2.\]
+  By the same logic as above, $3 | q^2$ and $3 | q$. Thus we have
+  reached a contradiction as $p$ and $q$ are coprime yet they share a
+  common factor of 3. Therefore the original
+  assumption must have been false and $\sqrt{3}$ must be irrational.
+
+  A similar argument works for $\sqrt{6}$. Although $6$ is not prime, it
+  is square-free, so we can still make the argument that $6 | p^2$
+  implies $6 | p$.
+\end{proof}
+
+\begin{proof}[Proof of (b)]
+  The proof fails when we argue that $4 | p^2$ implies $4 | p$. $p = 2$
+  is a counterexample as $p^2 = 4$ is a multiple of $4$ yet $p$ is not.
+\end{proof}
+
+\begin{tcolorbox}[title=Exercise 1.2.2.]
+  Show that there is no rational number $r$ satisfying $2^r = 3$.
+\end{tcolorbox}
+\begin{proof}
+  Suppose by way of contradiction that there exists such $r \in \Q$.
+  Express this $r$ as $p/q$ where $p, q \in \Z$ are coprime and $q \ne 0$.
+  Then
+  \[2^{p/q} = 3 \implies 2^p = 3^q.\]
+  after raising both sides to the $q$-th power. And here we have reached
+  a contradiction as an integer power of $2$ can never equal a non-zero
+  integer power of $3$. So there cannot exist such an $r \in \Q$.
 \end{proof}
 \end{document}
