@@ -1,0 +1,68 @@
+\documentclass[12pt, letterpaper]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{bbm}
+\usepackage{bm}
+\usepackage{xcolor}
+\usepackage{soul}
+\usepackage{adjustbox}
+\usepackage{titling}
+\usepackage{parskip}
+\usepackage{tcolorbox}
+
+\graphicspath{ {./images/} }
+
+% \setlist[enumerate, 2]{label=\roman*.}
+\setlist[enumerate]{nosep}
+\setlist[enumerate]{topsep=0pt}
+
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\F}{\mathbb{F}}
+\newcommand{\Tor}{\ \text{or}\ }
+\newcommand{\Tand}{\ \text{and}\ }
+\newcommand{\Mod}[1]{\ {\mathrm{mod}\ #1}}
+\newcommand{\Pmod}[1]{\ (\mathrm{mod}\ #1)}
+\newcommand{\LHS}{\text{LHS}}
+\newcommand{\RHS}{\text{RHS}}
+\newcommand{\cm}{\checkmark}
+
+\DeclareMathOperator{\tr}{tr}
+\DeclareMathOperator{\nullspace}{null}
+
+\setlength{\droptitle}{-1.5cm}
+
+\title{Understanding Analysis (Stephen Abbott) Exercises}
+\author{Frank Qiang}
+
+\begin{document}
+\maketitle
+
+\section{The Real Numbers}
+\subsection{Discussion: The Irrationality of $\sqrt{2}$}
+\subsection{Some Preliminaries}
+\begin{tcolorbox}[title=Exercise 1.2.1.]
+  \begin{enumerate}[label=(\alph*)]
+    \item Prove that $\sqrt{3}$ is irrational. Does a
+      similar argument work to show $\sqrt{6}$ is
+      irrational?
+    \item Where does the proof of Theorem 1.1.1 break
+      down if we try to use it to prove $\sqrt{4}$ is
+      irrational?
+  \end{enumerate}
+\end{tcolorbox}
+\begin{proof}[Proof of (a)]
+  Suppose by way of contradiction that $\sqrt{3}$ is
+  rational. Then there exist $p, q \in \Z$ coprime such
+  that $\sqrt{3} = p/q$. Square both sides to get
+  \[{\left(\frac{p}{q}\right)}^2 = 3.\]
+  Rewriting the above equality yields
+  \[p^2 = 3q^2.\]
+\end{proof}
+\end{document}
